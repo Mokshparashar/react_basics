@@ -13,3 +13,9 @@ button {
   height: 1rem;
   background-color: brown;
 }
+
+footer {
+  background-color: red;
+  height: 5rem;
+  margin-top: 20px;
+}

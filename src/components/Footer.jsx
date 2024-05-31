@@ -1,5 +1,9 @@
+import { useRef } from "react";
+
 function Footer() {
-  return <div>I am a Footer</div>;
+  const elem = useRef();
+  console.log(elem.current);
+  return <footer ref={elem}>I am a Footer</footer>;
 }
 
 export default Footer;

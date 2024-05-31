@@ -1,9 +1,8 @@
-import classes from "../style/button.module.css";
-function Button() {
+function Button(props) {
+ 
   return (
     <>
-      <button>Button</button>
-      <button className={classes.button}>click me</button>
+      <button onClick={() => props.setHideFunc(true)}>Button</button>
     </>
   );
 }
