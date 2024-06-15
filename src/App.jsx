@@ -1,23 +1,15 @@
 import { useState } from "react";
-import Button from "./components/Button";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-
+import Navbar from "../src/components/Navbar.jsx";
 function App() {
-  const [hide, setHide] = useState(false);
-  const obj = { id: 1, name: "Moksh" };
+  const [blackTheme, setBlackTheme] = useState(false);
+  console.log(blackTheme);
 
-  const team = "RCB";
   return (
     <>
-      <Button setHideFunc={setHide} obj={obj} team={team} />
-
-      {!hide && (
-        <>
-          <Navbar />
-          <Footer />
-        </>
-      )}
+      <div className={`${blackTheme ? "black-bg" : "white-bg"}`}>
+        <button onClick={() => setBlackTheme(!blackTheme)}>toogle theme</button>
+        <Navbar blackTheme={blackTheme} />
+      </div>
     </>
   );
 }

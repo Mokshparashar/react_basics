@@ -2,20 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
-nav {
+.black-bg {
+  background-color: black;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+div {
+  height: 100vh;
   width: 100vw;
-  height: 5rem;
-  background-color: blueviolet;
-}
-
-button {
-  width: 3rem;
-  height: 1rem;
-  background-color: brown;
-}
-
-footer {
-  background-color: red;
-  height: 5rem;
-  margin-top: 20px;
 }
