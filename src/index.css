@@ -14,3 +14,9 @@ div {
   height: 100vh;
   width: 100vw;
 }
+
+input {
+  outline: none;
+  display: block;
+  margin: 10px 10px;
+}
